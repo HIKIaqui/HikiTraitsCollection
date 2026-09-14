@@ -1,0 +1,185 @@
+module HikiTraits
+{
+
+    character_trait_definition hikitraits:selective_eater
+    {
+        CharacterTrait = hikitraits:selective_eater,
+        IsProfessionTrait = false,
+        DisabledInMultiplayer = false,
+        Cost = -4,
+        UIName = UI_trait_HikiTraits_SelectiveEater,
+        UIDescription = UI_trait_HikiTraits_SelectiveEaterDesc,
+    }
+
+    character_trait_definition hikitraits:animal_lover
+    {
+        CharacterTrait = hikitraits:animal_lover,
+        IsProfessionTrait = false,
+        DisabledInMultiplayer = false,
+        Cost = -4,
+        UIName = UI_trait_HikiTraits_AnimalLover,
+        UIDescription = UI_trait_HikiTraits_AnimalLoverDesc,
+    }
+
+    character_trait_definition hikitraits:exercise_routine
+    {
+        CharacterTrait = hikitraits:exercise_routine,
+        IsProfessionTrait = false,
+        DisabledInMultiplayer = false,
+        Cost = -2,
+        UIName = UI_trait_HikiTraits_ExerciseRoutine,
+        UIDescription = UI_trait_HikiTraits_ExerciseRoutineDesc,
+    }
+
+    character_trait_definition hikitraits:road_tripper
+    {
+        CharacterTrait = hikitraits:road_tripper,
+        IsProfessionTrait = false,
+        DisabledInMultiplayer = false,
+        Cost = 2,
+        UIName = UI_trait_HikiTraits_RoadTripper,
+        UIDescription = UI_trait_HikiTraits_RoadTripperDesc,
+    }
+
+    character_trait_definition hikitraits:panic_fumbling
+    {
+        CharacterTrait = hikitraits:panic_fumbling,
+        IsProfessionTrait = false,
+        DisabledInMultiplayer = false,
+        Cost = -5,
+        UIName = UI_trait_HikiTraits_PanicFumbling,
+        UIDescription = UI_trait_HikiTraits_PanicFumblingDesc,
+    }
+
+    character_trait_definition hikitraits:thrill_seeker
+    {
+        CharacterTrait = hikitraits:thrill_seeker,
+        IsProfessionTrait = false,
+        DisabledInMultiplayer = false,
+        Cost = -2,
+        UIName = UI_trait_HikiTraits_ThrillSeeker,
+        UIDescription = UI_trait_HikiTraits_ThrillSeekerDesc,
+    }
+
+    character_trait_definition hikitraits:loud_when_hurt
+    {
+        CharacterTrait = hikitraits:loud_when_hurt,
+        IsProfessionTrait = false,
+        DisabledInMultiplayer = false,
+        Cost = -3,
+        UIName = UI_trait_HikiTraits_LoudWhenHurt,
+        UIDescription = UI_trait_HikiTraits_LoudWhenHurtDesc,
+    }
+
+    character_trait_definition hikitraits:skipped_leg_day
+    {
+        CharacterTrait = hikitraits:skipped_leg_day,
+        IsProfessionTrait = false,
+        DisabledInMultiplayer = false,
+        Cost = -4,
+        UIName = UI_trait_HikiTraits_SkippedLegDay,
+        UIDescription = UI_trait_HikiTraits_SkippedLegDayDesc,
+        XPBoosts = Strength=2;Fitness=-3,
+    }
+
+    character_trait_definition hikitraits:task_fixation
+    {
+        CharacterTrait = hikitraits:task_fixation,
+        IsProfessionTrait = false,
+        DisabledInMultiplayer = false,
+        Cost = -4,
+        UIName = UI_trait_HikiTraits_TaskFixation,
+        UIDescription = UI_trait_HikiTraits_TaskFixationDesc,
+    }
+
+    character_trait_definition hikitraits:exhaustion_anxiety
+    {
+        CharacterTrait = hikitraits:exhaustion_anxiety,
+        IsProfessionTrait = false,
+        DisabledInMultiplayer = false,
+        Cost = -4,
+        UIName = UI_trait_HikiTraits_ExhaustionAnxiety,
+        UIDescription = UI_trait_HikiTraits_ExhaustionAnxietyDesc,
+    }
+
+    character_trait_definition hikitraits:weight_anxiety
+    {
+        CharacterTrait = hikitraits:weight_anxiety,
+        IsProfessionTrait = false,
+        DisabledInMultiplayer = false,
+        Cost = -4,
+        UIName = UI_trait_HikiTraits_WeightAnxiety,
+        UIDescription = UI_trait_HikiTraits_WeightAnxietyDesc,
+    }
+
+    character_trait_definition hikitraits:meditate
+    {
+        CharacterTrait = hikitraits:meditate,
+        IsProfessionTrait = false,
+        DisabledInMultiplayer = false,
+        Cost = 3,
+        UIName = UI_trait_HikiTraits_Meditate,
+        UIDescription = UI_trait_HikiTraits_MeditateDesc,
+    }
+
+    character_trait_definition hikitraits:high_spirits
+    {
+        CharacterTrait = hikitraits:high_spirits,
+        IsProfessionTrait = false,
+        DisabledInMultiplayer = false,
+        Cost = 2,
+        UIName = UI_trait_HikiTraits_HighSpirits,
+        UIDescription = UI_trait_HikiTraits_HighSpiritsDesc,
+    }
+
+    character_trait_definition hikitraits:shrug_it_off
+    {
+        CharacterTrait = hikitraits:shrug_it_off,
+        IsProfessionTrait = false,
+        DisabledInMultiplayer = false,
+        Cost = 4,
+        UIName = UI_trait_HikiTraits_ShrugItOff,
+        UIDescription = UI_trait_HikiTraits_ShrugItOffDesc,
+    }
+
+    character_trait_definition hikitraits:comfort_eater
+    {
+        CharacterTrait = hikitraits:comfort_eater,
+        IsProfessionTrait = false,
+        DisabledInMultiplayer = false,
+        Cost = 3,
+        UIName = UI_trait_HikiTraits_ComfortEater,
+        UIDescription = UI_trait_HikiTraits_ComfortEaterDesc,
+    }
+
+    character_trait_definition hikitraits:bitten_no
+    {
+        CharacterTrait = hikitraits:bitten_no,
+        IsProfessionTrait = false,
+        DisabledInMultiplayer = false,
+        Cost = 7,
+        UIName = UI_trait_HikiTraits_BittenNo,
+        UIDescription = UI_trait_HikiTraits_BittenNoDesc,
+    }
+
+    character_trait_definition hikitraits:neck_reflex
+    {
+        CharacterTrait = hikitraits:neck_reflex,
+        IsProfessionTrait = false,
+        DisabledInMultiplayer = false,
+        Cost = 5,
+        UIName = UI_trait_HikiTraits_NeckReflex,
+        UIDescription = UI_trait_HikiTraits_NeckReflexDesc,
+    }
+
+    character_trait_definition hikitraits:meat_fueled
+    {
+        CharacterTrait = hikitraits:meat_fueled,
+        IsProfessionTrait = false,
+        DisabledInMultiplayer = false,
+        Cost = 4,
+        UIName = UI_trait_HikiTraits_MeatFueled,
+        UIDescription = UI_trait_HikiTraits_MeatFueledDesc,
+    }
+
+}

@@ -1,0 +1,7 @@
+name=Hiki Traits: Unhinged
+id=HikiTraitsUnhinged
+author=Hiki
+description=Optional challenge and meme traits for Hiki Traits.
+modversion=0.1.0
+versionMin=42.20
+require=HikiTraits

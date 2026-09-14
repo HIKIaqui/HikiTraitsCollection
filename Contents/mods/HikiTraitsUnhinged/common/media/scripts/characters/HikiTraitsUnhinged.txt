@@ -1,0 +1,43 @@
+module HikiTraitsUnhinged
+{
+    character_trait_definition hikitraitsunhinged:ear_ringing
+    {
+        CharacterTrait = hikitraitsunhinged:ear_ringing,
+        IsProfessionTrait = false,
+        DisabledInMultiplayer = false,
+        Cost = -2,
+        UIName = UI_trait_HikiTraitsUnhinged_EarRinging,
+        UIDescription = UI_trait_HikiTraitsUnhinged_EarRingingDesc,
+    }
+
+    character_trait_definition hikitraitsunhinged:only_drank_soda
+    {
+        CharacterTrait = hikitraitsunhinged:only_drank_soda,
+        IsProfessionTrait = false,
+        DisabledInMultiplayer = false,
+        Cost = -4,
+        UIName = UI_trait_HikiTraitsUnhinged_OnlyDrankSoda,
+        UIDescription = UI_trait_HikiTraitsUnhinged_OnlyDrankSodaDesc,
+    }
+
+    character_trait_definition hikitraitsunhinged:cardiac_patient
+    {
+        CharacterTrait = hikitraitsunhinged:cardiac_patient,
+        IsProfessionTrait = false,
+        DisabledInMultiplayer = false,
+        Cost = -8,
+        UIName = UI_trait_HikiTraitsUnhinged_CardiacPatient,
+        UIDescription = UI_trait_HikiTraitsUnhinged_CardiacPatientDesc,
+    }
+
+    character_trait_definition hikitraitsunhinged:i_can_quit
+    {
+        CharacterTrait = hikitraitsunhinged:i_can_quit,
+        IsProfessionTrait = false,
+        DisabledInMultiplayer = false,
+        Cost = -10,
+        UIName = UI_trait_HikiTraitsUnhinged_ICanQuit,
+        UIDescription = UI_trait_HikiTraitsUnhinged_ICanQuitDesc,
+        MutuallyExclusiveTraits = base:smoker,
+    }
+}

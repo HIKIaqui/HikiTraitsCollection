@@ -1,0 +1,7 @@
+name=Hiki Traits: Unhinged
+id=HikiTraitsUnhinged
+author=Hiki
+description=Adds unusual, dangerous and questionably reasonable character traits.
+modversion=0.1.0
+versionMin=42.20
+require=HikiTraits
