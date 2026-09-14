@@ -46,5 +46,9 @@
   "UI_trait_HikiTraits_RegenerativeMetabolism": "Regenerative Metabolism",
   "UI_trait_HikiTraits_RegenerativeMetabolismDesc": "Slowly converts Calories and body weight into Health while injured. Stops working when Calories or weight become too low.",
   "UI_trait_HikiTraits_Immunocompromised": "Immunocompromised",
-  "UI_trait_HikiTraits_ImmunocompromisedDesc": "After two days without taking Antibiotics, Sickness begins accumulating at an increasingly rapid rate. Taking Antibiotics resets the timer."
+  "UI_trait_HikiTraits_ImmunocompromisedDesc": "After two days without taking Antibiotics, Sickness begins accumulating at an increasingly rapid rate. Taking Antibiotics resets the timer.",
+  "UI_trait_HikiTraits_LowTolerance": "Low Tolerance",
+  "UI_trait_HikiTraits_LowToleranceDesc": "You get additional intoxication and sickness when drinking alcohol or smoking.",
+  "UI_trait_HikiTraits_Fearful": "Fearful",
+  "UI_trait_HikiTraits_FearfulDesc": "Reaching maximum Panic causes a loud scream and completely soaks every worn garment covering the lower body. The effect can only occur again after Panic fully subsides."
 }

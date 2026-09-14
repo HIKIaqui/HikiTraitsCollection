@@ -3,7 +3,7 @@ local Library = require "HikiTraits/Library"
 
 HikiTraits.MeatFueled = HikiTraits.MeatFueled or {
     TRAIT_ID = "hikitraits:meat_fueled",
-    ENDURANCE_PER_FULL_ITEM = 0.15,
+    ENDURANCE_PER_FULL_ITEM = 0.25,
     FRESH_MEATS = {
         ["Base.Beef"] = true,
         ["Base.Steak"] = true,

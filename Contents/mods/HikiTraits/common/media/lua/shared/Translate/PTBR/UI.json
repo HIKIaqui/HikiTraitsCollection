@@ -46,5 +46,9 @@
   "UI_trait_HikiTraits_RegenerativeMetabolism": "Metabolismo Regenerativo",
   "UI_trait_HikiTraits_RegenerativeMetabolismDesc": "Converte lentamente Calorias e peso corporal em Vida enquanto estiver ferido. Para de funcionar quando as Calorias ou o peso ficam baixos demais.",
   "UI_trait_HikiTraits_Immunocompromised": "Imunocomprometido",
-  "UI_trait_HikiTraits_ImmunocompromisedDesc": "Após dois dias sem tomar Antibióticos, começa a acumular Doença cada vez mais rápido. Tomar Antibióticos reinicia o prazo."
+  "UI_trait_HikiTraits_ImmunocompromisedDesc": "Após dois dias sem tomar Antibióticos, começa a acumular Doença cada vez mais rápido. Tomar Antibióticos reinicia o prazo.",
+  "UI_trait_HikiTraits_LowTolerance": "Baixa Tolerância",
+  "UI_trait_HikiTraits_LowToleranceDesc": "Você recebe intoxicação e doença adicionais ao beber álcool ou fumar.",
+  "UI_trait_HikiTraits_Fearful": "Medroso",
+  "UI_trait_HikiTraits_FearfulDesc": "Ao atingir o nível máximo de Pânico, grita e encharca completamente todas as roupas vestidas que cobrem a parte de baixo do corpo. O efeito só pode ocorrer novamente depois que o Pânico desaparece por completo."
 }

@@ -5,7 +5,7 @@ HikiTraits.ThrillSeeker = HikiTraits.ThrillSeeker or {
     TRAIT_ID = "hikitraits:thrill_seeker",
     PANIC_THRESHOLD = 50,
     STRESS_THRESHOLD = 0.50,
-    GRACE_HOURS = 1,
+    GRACE_HOURS = 48,
     UNHAPPINESS_PER_MINUTE = 0.1,
 }
 local Trait = HikiTraits.ThrillSeeker

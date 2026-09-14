@@ -4,9 +4,9 @@ local Library = require "HikiTraits/Library"
 HikiTraits.Immunocompromised = HikiTraits.Immunocompromised or {
     TRAIT_ID = "hikitraits:immunocompromised",
     GRACE_HOURS = 48,
-    STAGE_HOURS = 24,
+    STAGE_HOURS = 12,
     MAX_STAGE = 4,
-    BASE_SICKNESS_PER_MINUTE = 0.0001,
+    BASE_SICKNESS_PER_MINUTE = 0.0002,
     QUALIFYING_ANTIBIOTICS = {
         ["Base.Antibiotics"] = true,
     },
