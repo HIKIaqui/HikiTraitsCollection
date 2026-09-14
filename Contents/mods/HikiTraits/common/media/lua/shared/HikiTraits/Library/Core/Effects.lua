@@ -62,6 +62,16 @@ function Effects.damageHealth(amount, options)
     }
 end
 
+function Effects.healHealth(amount, options)
+    options = options or {}
+
+    return {
+        type = "healthHealing",
+        value = amount,
+        when = options.when,
+    }
+end
+
 function Effects.custom(callback, options)
     options = options or {}
     assert(type(callback) == "function", "custom effect callback is required")
@@ -133,6 +143,16 @@ function Effects.apply(character, effects, context)
                         amount,
                         { sync = false }
                     )
+                elseif effect.type == "healthHealing" then
+                    local amount = tonumber(
+                        Util.resolveValue(effect.value, context)
+                    ) or 0
+
+                    return Stats.healHealth(
+                        character,
+                        amount,
+                        { sync = false }
+                    )
                 elseif effect.type == "custom" then
                     return effect.callback(context)
                 end
@@ -147,7 +167,9 @@ function Effects.apply(character, effects, context)
 
                 if effect.type == "stat" and result.changed then
                     rememberStat(changedStats, effect.stat)
-                elseif effect.type == "healthDamage" and result.changed then
+                elseif (effect.type == "healthDamage"
+                    or effect.type == "healthHealing")
+                    and result.changed then
                     damageChanged = true
                 end
             end

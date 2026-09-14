@@ -34,5 +34,17 @@
   "UI_trait_HikiTraits_NeckReflex": "Reflexo da Jugular",
   "UI_trait_HikiTraits_NeckReflexDesc": "Enquanto não estiver sem fôlego ou exausto, ferimentos graves no pescoço sofridos no momento são arranhões. No momento da ativação, perde muito fôlego. (-50% End)",
   "UI_trait_HikiTraits_MeatFueled": "Movido a Carne",
-  "UI_trait_HikiTraits_MeatFueledDesc": "Comer carne fresca não preparada em uma refeição recupera muito fôlego imediatamente. (+15% End)"
+  "UI_trait_HikiTraits_MeatFueledDesc": "Comer carne fresca não preparada em uma refeição recupera muito fôlego imediatamente. (+15% End)",
+  "UI_trait_HikiTraits_SlipperyWhenWet": "Liso quando Molhado",
+  "UI_trait_HikiTraits_SlipperyWhenWetDesc": "Quando molhado, você evita alguns ataques. Nível do moodle define o quê. Pelo menos 1 = Arranhões. Pelo menos 2-3 = +Lacerações. 4 = +Mordidas. Você ainda pode ser puxado pro chão.",
+  "UI_trait_HikiTraits_NeverJustAScratch": "Nunca só um Arranhão",
+  "UI_trait_HikiTraits_NeverJustAScratchDesc": "Quando você deveria receber um arranhão, ao invés disso recebe uma laceração.",
+  "UI_trait_HikiTraits_JustAScratch": "Só um Arranhão",
+  "UI_trait_HikiTraits_JustAScratchDesc": "Quando você deveria receber uma laceração, ao invés disso recebe um arranhão.",
+  "UI_trait_HikiTraits_BalancedDiet": "Dieta Balanceada",
+  "UI_trait_HikiTraits_BalancedDietDesc": "Proteína alta concede +2 de Capacidade de Carga. Carboidratos altos recuperam gradualmente fôlego adicional.",
+  "UI_trait_HikiTraits_RegenerativeMetabolism": "Metabolismo Regenerativo",
+  "UI_trait_HikiTraits_RegenerativeMetabolismDesc": "Converte lentamente Calorias e peso corporal em Vida enquanto estiver ferido. Para de funcionar quando as Calorias ou o peso ficam baixos demais.",
+  "UI_trait_HikiTraits_Immunocompromised": "Imunocomprometido",
+  "UI_trait_HikiTraits_ImmunocompromisedDesc": "Após dois dias sem tomar Antibióticos, começa a acumular Doença cada vez mais rápido. Tomar Antibióticos reinicia o prazo."
 }

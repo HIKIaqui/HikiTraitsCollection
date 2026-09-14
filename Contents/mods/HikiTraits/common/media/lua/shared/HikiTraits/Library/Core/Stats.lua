@@ -345,4 +345,39 @@ function Stats.damageHealth(character, amount, options)
     return result
 end
 
+function Stats.healHealth(character, amount, options)
+    options = options or {}
+
+    local result = {
+        before = nil,
+        after = nil,
+        delta = 0,
+        changed = false,
+    }
+
+    if character == nil or (tonumber(amount) or 0) <= 0 then
+        return result
+    end
+
+    local bodyDamage = character:getBodyDamage()
+    if bodyDamage == nil then
+        return result
+    end
+
+    result.before = tonumber(bodyDamage:getOverallBodyHealth())
+    bodyDamage:AddGeneralHealth(tonumber(amount))
+    result.after = tonumber(bodyDamage:getOverallBodyHealth())
+
+    if result.before ~= nil and result.after ~= nil then
+        result.delta = result.after - result.before
+        result.changed = math.abs(result.delta) > Stats.EPSILON
+    end
+
+    if result.changed and options.sync ~= false then
+        Stats.syncDamage(character)
+    end
+
+    return result
+end
+
 return Stats

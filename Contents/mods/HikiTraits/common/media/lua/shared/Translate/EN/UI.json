@@ -34,5 +34,17 @@
   "UI_trait_HikiTraits_NeckReflex": "Neck Reflex",
   "UI_trait_HikiTraits_NeckReflexDesc": "While not out of breath or exhausted, neck injuries are turned into scratches. Loses a lot of endurance when activated. (-50% Endurance)",
   "UI_trait_HikiTraits_MeatFueled": "Meat Fueled",
-  "UI_trait_HikiTraits_MeatFueledDesc": "Eating fresh meat not prepared in a meal recovers a lot of Endurance. (+15% Endurance)"
+  "UI_trait_HikiTraits_MeatFueledDesc": "Eating fresh meat not prepared in a meal recovers a lot of Endurance. (+15% Endurance)",
+  "UI_trait_HikiTraits_SlipperyWhenWet": "Slippery When Wet",
+  "UI_trait_HikiTraits_SlipperyWhenWetDesc": "When wet, you avoid some attacks. Lvl of the moodle defines what. At least 1 = Scratches. At least 2-3 = +Lacerations. 4 = +Bites. You can still be dragged down.",
+  "UI_trait_HikiTraits_NeverJustAScratch": "Never Just a Scratch",
+  "UI_trait_HikiTraits_NeverJustAScratchDesc": "When you would receive a scratch, you get a laceration instead.",
+  "UI_trait_HikiTraits_JustAScratch": "Just a Scratch",
+  "UI_trait_HikiTraits_JustAScratchDesc": "When you would receive a laceration, you get a scratch instead.",
+  "UI_trait_HikiTraits_BalancedDiet": "Balanced Diet",
+  "UI_trait_HikiTraits_BalancedDietDesc": "High Protein grants +2 Carrying Capacity. High Carbohydrates gradually restore additional Endurance.",
+  "UI_trait_HikiTraits_RegenerativeMetabolism": "Regenerative Metabolism",
+  "UI_trait_HikiTraits_RegenerativeMetabolismDesc": "Slowly converts Calories and body weight into Health while injured. Stops working when Calories or weight become too low.",
+  "UI_trait_HikiTraits_Immunocompromised": "Immunocompromised",
+  "UI_trait_HikiTraits_ImmunocompromisedDesc": "After two days without taking Antibiotics, Sickness begins accumulating at an increasingly rapid rate. Taking Antibiotics resets the timer."
 }

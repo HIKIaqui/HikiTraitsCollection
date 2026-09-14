@@ -16,5 +16,9 @@ CharacterTrait.register("hikitraits:comfort_eater")
 CharacterTrait.register("hikitraits:bitten_no")
 CharacterTrait.register("hikitraits:neck_reflex")
 CharacterTrait.register("hikitraits:meat_fueled")
-
-
+CharacterTrait.register("hikitraits:slippery_when_wet")
+CharacterTrait.register("hikitraits:never_just_a_scratch")
+CharacterTrait.register("hikitraits:just_a_scratch")
+CharacterTrait.register("hikitraits:balanced_diet")
+CharacterTrait.register("hikitraits:regenerative_metabolism")
+CharacterTrait.register("hikitraits:immunocompromised")

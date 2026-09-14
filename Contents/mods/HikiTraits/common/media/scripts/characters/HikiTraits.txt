@@ -182,4 +182,65 @@ module HikiTraits
         UIDescription = UI_trait_HikiTraits_MeatFueledDesc,
     }
 
+    character_trait_definition hikitraits:slippery_when_wet
+    {
+        CharacterTrait = hikitraits:slippery_when_wet,
+        IsProfessionTrait = false,
+        DisabledInMultiplayer = false,
+        Cost = 8,
+        UIName = UI_trait_HikiTraits_SlipperyWhenWet,
+        UIDescription = UI_trait_HikiTraits_SlipperyWhenWetDesc,
+    }
+
+    character_trait_definition hikitraits:never_just_a_scratch
+    {
+        CharacterTrait = hikitraits:never_just_a_scratch,
+        IsProfessionTrait = false,
+        DisabledInMultiplayer = false,
+        Cost = -4,
+        UIName = UI_trait_HikiTraits_NeverJustAScratch,
+        UIDescription = UI_trait_HikiTraits_NeverJustAScratchDesc,
+    }
+    
+    character_trait_definition hikitraits:just_a_scratch
+    {
+        CharacterTrait = hikitraits:just_a_scratch,
+        IsProfessionTrait = false,
+        DisabledInMultiplayer = false,
+        Cost = 4,
+        UIName = UI_trait_HikiTraits_JustAScratch,
+        UIDescription = UI_trait_HikiTraits_JustAScratchDesc,
+        MutuallyExclusiveTraits = ["hikitraits:never_just_a_scratch"],
+    }
+
+    character_trait_definition hikitraits:balanced_diet
+    {
+        CharacterTrait = hikitraits:balanced_diet,
+        IsProfessionTrait = false,
+        DisabledInMultiplayer = false,
+        Cost = 4,
+        UIName = UI_trait_HikiTraits_BalancedDiet,
+        UIDescription = UI_trait_HikiTraits_BalancedDietDesc,
+    }
+
+    character_trait_definition hikitraits:regenerative_metabolism
+    {
+        CharacterTrait = hikitraits:regenerative_metabolism,
+        IsProfessionTrait = false,
+        DisabledInMultiplayer = false,
+        Cost = 6,
+        UIName = UI_trait_HikiTraits_RegenerativeMetabolism,
+        UIDescription = UI_trait_HikiTraits_RegenerativeMetabolismDesc,
+    }
+
+    character_trait_definition hikitraits:immunocompromised
+    {
+        CharacterTrait = hikitraits:immunocompromised,
+        IsProfessionTrait = false,
+        DisabledInMultiplayer = false,
+        Cost = -6,
+        UIName = UI_trait_HikiTraits_Immunocompromised,
+        UIDescription = UI_trait_HikiTraits_ImmunocompromisedDesc,
+    }
+
 }
