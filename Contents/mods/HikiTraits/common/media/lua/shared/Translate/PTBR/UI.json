@@ -42,7 +42,7 @@
   "UI_trait_HikiTraits_JustAScratch": "Só um Arranhão",
   "UI_trait_HikiTraits_JustAScratchDesc": "Quando você deveria receber uma laceração, ao invés disso recebe um arranhão.",
   "UI_trait_HikiTraits_BalancedDiet": "Dieta Balanceada",
-  "UI_trait_HikiTraits_BalancedDietDesc": "Proteína alta concede +2 de Capacidade de Carga. Carboidratos altos recuperam gradualmente fôlego adicional.",
+  "UI_trait_HikiTraits_BalancedDietDesc": "Proteína alta concede +20% de Capacidade de Carga. Carboidratos altos recuperam gradualmente fôlego adicional.",
   "UI_trait_HikiTraits_RegenerativeMetabolism": "Metabolismo Regenerativo",
   "UI_trait_HikiTraits_RegenerativeMetabolismDesc": "Converte lentamente Calorias e peso corporal em Vida enquanto estiver ferido. Para de funcionar quando as Calorias ou o peso ficam baixos demais.",
   "UI_trait_HikiTraits_Immunocompromised": "Imunocomprometido",

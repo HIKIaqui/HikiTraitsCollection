@@ -5,8 +5,8 @@ HikiTraits.BalancedDiet = HikiTraits.BalancedDiet or {
     TRAIT_ID = "hikitraits:balanced_diet",
     MINIMUM_PROTEINS = 100,
     MINIMUM_CARBOHYDRATES = 100,
-    CARRY_CAPACITY_BONUS = 2,
-    ENDURANCE_PER_MINUTE = 0.005,
+    CARRY_CAPACITY_BONUS = 0.20,
+    ENDURANCE_PER_MINUTE = 0.01,
 }
 local Trait = HikiTraits.BalancedDiet
 

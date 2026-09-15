@@ -42,7 +42,7 @@
   "UI_trait_HikiTraits_JustAScratch": "Just a Scratch",
   "UI_trait_HikiTraits_JustAScratchDesc": "When you would receive a laceration, you get a scratch instead.",
   "UI_trait_HikiTraits_BalancedDiet": "Balanced Diet",
-  "UI_trait_HikiTraits_BalancedDietDesc": "High Protein grants +2 Carrying Capacity. High Carbohydrates gradually restore additional Endurance.",
+  "UI_trait_HikiTraits_BalancedDietDesc": "High Protein grants +20% Carrying Capacity. High Carbohydrates gradually restore additional Endurance.",
   "UI_trait_HikiTraits_RegenerativeMetabolism": "Regenerative Metabolism",
   "UI_trait_HikiTraits_RegenerativeMetabolismDesc": "Slowly converts Calories and body weight into Health while injured. Stops working when Calories or weight become too low.",
   "UI_trait_HikiTraits_Immunocompromised": "Immunocompromised",
