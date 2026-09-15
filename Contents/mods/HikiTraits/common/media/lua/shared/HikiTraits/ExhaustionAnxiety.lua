@@ -3,7 +3,7 @@ local Library = require "HikiTraits/Library"
 
 HikiTraits.ExhaustionAnxiety = HikiTraits.ExhaustionAnxiety or {
     TRAIT_ID = "hikitraits:exhaustion_anxiety",
-    STRESS_PER_MINUTE = { [1] = 0.005, [2] = 0.010, [3] = 0.020, [4] = 0.050 },
+    STRESS_PER_MINUTE = { [1] = 0.010, [2] = 0.020, [3] = 0.030, [4] = 0.050 },
     PANIC_PER_MINUTE = { [1] = 0.00, [2] = 2.50, [3] = 5.00, [4] = 10.00 },
 }
 local Trait = HikiTraits.ExhaustionAnxiety

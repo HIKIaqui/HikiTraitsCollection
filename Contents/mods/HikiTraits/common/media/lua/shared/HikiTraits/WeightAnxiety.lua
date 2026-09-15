@@ -3,7 +3,7 @@ local Library = require "HikiTraits/Library"
 
 HikiTraits.WeightAnxiety = HikiTraits.WeightAnxiety or {
     TRAIT_ID = "hikitraits:weight_anxiety",
-    STRESS_PER_MINUTE = 0.002,
+    STRESS_PER_MINUTE = 0.004,
 }
 local Trait = HikiTraits.WeightAnxiety
 

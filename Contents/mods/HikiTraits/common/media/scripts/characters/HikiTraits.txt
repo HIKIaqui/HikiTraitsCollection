@@ -56,7 +56,7 @@ module HikiTraits
         CharacterTrait = hikitraits:thrill_seeker,
         IsProfessionTrait = false,
         DisabledInMultiplayer = false,
-        Cost = -2,
+        Cost = -3,
         UIName = UI_trait_HikiTraits_ThrillSeeker,
         UIDescription = UI_trait_HikiTraits_ThrillSeekerDesc,
     }
@@ -239,7 +239,7 @@ module HikiTraits
         CharacterTrait = hikitraits:immunocompromised,
         IsProfessionTrait = false,
         DisabledInMultiplayer = false,
-        Cost = -8,
+        Cost = -9,
         UIName = UI_trait_HikiTraits_Immunocompromised,
         UIDescription = UI_trait_HikiTraits_ImmunocompromisedDesc,
     }
