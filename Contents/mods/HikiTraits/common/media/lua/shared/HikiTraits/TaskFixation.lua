@@ -3,7 +3,7 @@ local Library = require "HikiTraits/Library"
 
 HikiTraits.TaskFixation = HikiTraits.TaskFixation or {
     TRAIT_ID = "hikitraits:task_fixation",
-    MINIMUM_PROGRESS = 0.25,
+    MINIMUM_PROGRESS = 0.15,
     STRESS_PER_INTERRUPTION = 0.10,
     SERVER_COOLDOWN_MS = 250,
 }

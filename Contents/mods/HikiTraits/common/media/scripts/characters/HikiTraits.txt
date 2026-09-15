@@ -107,7 +107,7 @@ module HikiTraits
         CharacterTrait = hikitraits:weight_anxiety,
         IsProfessionTrait = false,
         DisabledInMultiplayer = false,
-        Cost = -4,
+        Cost = -3,
         UIName = UI_trait_HikiTraits_WeightAnxiety,
         UIDescription = UI_trait_HikiTraits_WeightAnxietyDesc,
     }
