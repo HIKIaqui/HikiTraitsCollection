@@ -3,7 +3,7 @@ local Library = require "HikiTraits/Library"
 
 HikiTraits.ComfortEater = HikiTraits.ComfortEater or {
     TRAIT_ID = "hikitraits:comfort_eater",
-    STRESS_RELIEF_PER_FULL_ITEM = 0.015,
+    STRESS_RELIEF_PER_FULL_ITEM = 0.075,
 }
 local Trait = HikiTraits.ComfortEater
 

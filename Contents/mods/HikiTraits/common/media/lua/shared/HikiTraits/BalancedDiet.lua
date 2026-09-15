@@ -3,7 +3,7 @@ local Library = require "HikiTraits/Library"
 
 HikiTraits.BalancedDiet = HikiTraits.BalancedDiet or {
     TRAIT_ID = "hikitraits:balanced_diet",
-    MINIMUM_PROTEINS = 300,
+    MINIMUM_PROTEINS = 100,
     MINIMUM_CARBOHYDRATES = 100,
     CARRY_CAPACITY_BONUS = 2,
     ENDURANCE_PER_MINUTE = 0.005,

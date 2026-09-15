@@ -187,7 +187,7 @@ module HikiTraits
         CharacterTrait = hikitraits:slippery_when_wet,
         IsProfessionTrait = false,
         DisabledInMultiplayer = false,
-        Cost = 8,
+        Cost = 10,
         UIName = UI_trait_HikiTraits_SlipperyWhenWet,
         UIDescription = UI_trait_HikiTraits_SlipperyWhenWetDesc,
     }
@@ -200,6 +200,7 @@ module HikiTraits
         Cost = -4,
         UIName = UI_trait_HikiTraits_NeverJustAScratch,
         UIDescription = UI_trait_HikiTraits_NeverJustAScratchDesc,
+        MutuallyExclusiveTraits = hikitraits:just_a_scratch,
     }
     
     character_trait_definition hikitraits:just_a_scratch
@@ -210,7 +211,7 @@ module HikiTraits
         Cost = 4,
         UIName = UI_trait_HikiTraits_JustAScratch,
         UIDescription = UI_trait_HikiTraits_JustAScratchDesc,
-        MutuallyExclusiveTraits = ["hikitraits:never_just_a_scratch"],
+        MutuallyExclusiveTraits = hikitraits:never_just_a_scratch,
     }
 
     character_trait_definition hikitraits:balanced_diet
