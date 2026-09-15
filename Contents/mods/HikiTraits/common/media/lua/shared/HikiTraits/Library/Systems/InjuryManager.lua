@@ -35,6 +35,7 @@ InjuryManager.PRIORITY = InjuryManager.PRIORITY or {
     PREVENTION = 100,
     LOCATION_DEFENSE = 200,
     LIMITED_DEFENSE = 300,
+    BETTERING = 350,
     WORSENING = 400,
     DEFAULT = 500,
 }

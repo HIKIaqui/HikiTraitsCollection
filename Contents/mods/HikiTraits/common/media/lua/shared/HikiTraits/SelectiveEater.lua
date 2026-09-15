@@ -188,6 +188,10 @@ Library.ConsumptionManager.registerRule({
     id = SelectiveEater.TRAIT_ID,
     traitId = SelectiveEater.TRAIT_ID,
     kinds = Library.ConsumptionManager.Kind.FOOD,
+    when = function(context)
+        local item = context.itemSnapshot or {}
+        return item.smokable ~= true
+    end,
     effects = {
         Library.Effects.addStat(CharacterStat.UNHAPPINESS, function(context)
             return fullPenalty(context) * context.portion

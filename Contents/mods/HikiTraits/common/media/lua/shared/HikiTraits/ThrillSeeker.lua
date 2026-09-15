@@ -6,7 +6,7 @@ HikiTraits.ThrillSeeker = HikiTraits.ThrillSeeker or {
     PANIC_THRESHOLD = 50,
     STRESS_THRESHOLD = 0.50,
     GRACE_HOURS = 48,
-    UNHAPPINESS_PER_MINUTE = 0.1,
+    UNHAPPINESS_PER_MINUTE = 0.2,
 }
 local Trait = HikiTraits.ThrillSeeker
 local TIMER_KEY = "lastExcitementHour"

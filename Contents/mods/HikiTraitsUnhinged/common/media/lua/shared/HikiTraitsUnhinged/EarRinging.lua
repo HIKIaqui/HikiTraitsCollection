@@ -31,7 +31,7 @@ Library.Runtime.registerEvent("OnWeaponSwingHitPoint", {
     scope = Library.Runtime.Scope.LOCAL,
     when = function(context)
         local weapon = context.arguments[2]
-        return weapon ~= nil and weapon:isRanged()
+        return weapon ~= nil and weapon:isAimedFirearm()
             and not Library.ClothingManager.hasWornGroup(
                 context.character, PROTECTOR_GROUP
             )

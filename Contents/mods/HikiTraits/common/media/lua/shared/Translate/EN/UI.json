@@ -10,7 +10,7 @@
   "UI_trait_HikiTraits_PanicFumbling": "Fumbles Under Pressure",
   "UI_trait_HikiTraits_PanicFumblingDesc": "Exertion while panicked may loosen bandages or reopen stitches. The chance increases with Panic.",
   "UI_trait_HikiTraits_ThrillSeeker": "Thrill Seeker",
-  "UI_trait_HikiTraits_ThrillSeekerDesc": "Going more than two days without reaching at least 50% Stress or Panic causes severe Boredom.",
+  "UI_trait_HikiTraits_ThrillSeekerDesc": "Going more than two days without reaching at least 50% Stress or Panic causes Unhappiness.",
   "UI_trait_HikiTraits_LoudWhenHurt": "Vocal in Pain",
   "UI_trait_HikiTraits_LoudWhenHurtDesc": "Tends to cry out whenever a new injury is suffered, even a minor one.",
   "UI_trait_HikiTraits_SkippedLegDay": "Skipped Leg Day",

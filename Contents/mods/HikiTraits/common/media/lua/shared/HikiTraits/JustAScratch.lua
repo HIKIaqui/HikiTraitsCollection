@@ -11,7 +11,7 @@ local InjuryManager = Library.InjuryManager
 InjuryManager.registerRule({
     id = Trait.TRAIT_ID,
     traitId = Trait.TRAIT_ID,
-    priority = InjuryManager.PRIORITY.PREVENTION,
+    priority = InjuryManager.PRIORITY.BETTERING,
     injuries = "cut",
     action = "replace",
     replacement = "scratch",

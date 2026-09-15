@@ -40,6 +40,8 @@ ConsumptionManager.NETWORK_COMMAND =
     ConsumptionManager.NETWORK_COMMAND or "ConsumptionObservedV1"
 ConsumptionManager.MAX_NETWORK_LITERS =
     ConsumptionManager.MAX_NETWORK_LITERS or 5
+ConsumptionManager.FLUID_RATIO_EPSILON =
+    ConsumptionManager.FLUID_RATIO_EPSILON or 0.000001
 
 ConsumptionManager._observers = ConsumptionManager._observers or {}
 ConsumptionManager._orderedObservers =
@@ -144,6 +146,21 @@ local function snapshotFluidProperties(properties)
     }
 end
 
+local function fluidRatio(fluidContainer, fluid)
+    if fluid == nil then
+        return 0, false
+    end
+
+    local ratio, succeeded = callMethod(
+        0,
+        fluidContainer,
+        "getRatioForFluid",
+        fluid
+    )
+
+    return tonumber(ratio) or 0, succeeded
+end
+
 function ConsumptionManager.snapshotFluid(fluidContainer)
     if fluidContainer == nil then
         return nil
@@ -169,15 +186,35 @@ function ConsumptionManager.snapshotFluid(fluidContainer)
         "getProperties"
     )
 
+    local cleanWaterRatio = 0
+    local taintedWaterRatio = 0
+    local cleanRatioSupported = false
+    local taintedRatioSupported = false
+
+    if Fluid ~= nil then
+        cleanWaterRatio, cleanRatioSupported =
+            fluidRatio(fluidContainer, Fluid.Water)
+        taintedWaterRatio, taintedRatioSupported =
+            fluidRatio(fluidContainer, Fluid.TaintedWater)
+    end
+
+    local ratioSupported =
+        cleanRatioSupported or taintedRatioSupported
+    local totalWaterRatio = cleanWaterRatio + taintedWaterRatio
+
     local snapshot = {
         amount = numberMethod(fluidContainer, "getAmount") or 0,
         empty = booleanMethod(fluidContainer, "isEmpty"),
         primaryType = primaryType,
         properties = snapshotFluidProperties(properties),
-        containsTaintedWater = false,
+        cleanWaterRatio = cleanWaterRatio,
+        taintedWaterRatio = taintedWaterRatio,
+        waterRatio = totalWaterRatio,
+        containsTaintedWater =
+            taintedWaterRatio > ConsumptionManager.FLUID_RATIO_EPSILON,
     }
 
-    if primaryType == nil and Fluid ~= nil
+    if not ratioSupported and Fluid ~= nil
         and Fluid.TaintedWater ~= nil then
         local contains = callMethod(
             false,
@@ -188,10 +225,20 @@ function ConsumptionManager.snapshotFluid(fluidContainer)
         snapshot.containsTaintedWater = contains == true
     end
 
-    snapshot.plainWater =
-        primaryType == "Water"
-        or primaryType == "TaintedWater"
-        or (primaryType == nil and snapshot.containsTaintedWater)
+    if ratioSupported then
+        -- Clean and tainted water may be mixed with each other and still count
+        -- as plain water. Any soda, alcohol, coffee, or other fluid component
+        -- makes the drink a mixture instead.
+        snapshot.plainWater = totalWaterRatio
+            >= 1 - ConsumptionManager.FLUID_RATIO_EPSILON
+    else
+        -- Compatibility fallback for lightweight mocks and older bridges that
+        -- expose only the primary fluid.
+        snapshot.plainWater =
+            primaryType == "Water"
+            or primaryType == "TaintedWater"
+            or (primaryType == nil and snapshot.containsTaintedWater)
+    end
     snapshot.alcoholic = snapshot.properties ~= nil
         and (tonumber(snapshot.properties.alcohol) or 0) > 0
 

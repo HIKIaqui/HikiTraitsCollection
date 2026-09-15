@@ -516,13 +516,18 @@ function TimedActionManager.registerAuthoritative(specification)
             hookId
         )
 
-        if state.sent or state.payload ~= nil then
+        if state.sent then
             return
         end
 
+        -- A method such as animEvent can be invoked many times for the same
+        -- action. Eligibility belongs to this invocation, not permanently to
+        -- the action: an early non-matching animation event must not prevent a
+        -- later matching one from being transmitted.
+        state.payload = nil
+
         if type(definition.whenAction) == "function"
             and definition.whenAction(context) ~= true then
-            state.rejected = true
             return
         end
 
@@ -556,7 +561,7 @@ function TimedActionManager.registerAuthoritative(specification)
         )
 
         if definition.phase == "before" or state.sent
-            or state.rejected or state.payload == nil then
+            or state.payload == nil then
             return
         end
 

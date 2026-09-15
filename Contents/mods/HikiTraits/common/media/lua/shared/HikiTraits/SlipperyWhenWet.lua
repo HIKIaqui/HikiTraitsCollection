@@ -45,9 +45,16 @@ InjuryManager.registerHandler({
             return nil
         end
 
+        -- Infection is stored for the whole body part rather than attributed
+        -- to each new wound. Rewinding it during a partial removal could cure
+        -- an unprotected bite received in the same 100 ms scan. In that rare
+        -- mixed event, accepting every wound is safer than corrupting Knox
+        -- infection state.
+        if #protected ~= #context.newInjuries then
+            return nil
+        end
+
         return InjuryManager.decisionRemove(protected, {
-            -- A prevented bite never happened, so its Knox Infection roll is
-            -- rewound together with the injury whenever this handler applies.
             infectionPolicy = InjuryManager.INFECTION_POLICY.PREVIOUS,
         })
     end,

@@ -7,12 +7,12 @@ HikiTraitsUnhinged.ICanQuit = HikiTraitsUnhinged.ICanQuit or {
     GRACE_HOURS = 6,
     STAGE_HOURS = 3,
     MAX_STAGE = 4,
-    BASE_STRESS_PER_MINUTE = 0.002,
+    BASE_STRESS_PER_MINUTE = 0.0015,
     BASE_SICKNESS_PER_MINUTE = 0.0005,
     LETHAL_STAGE = 4,
     MAX_SICKNESS_THRESHOLD = 0.999,
     HEALTH_DAMAGE_PER_MINUTE = 1.0,
-    MINIMUM_ALCOHOL_DRINK_LITERS = 0.05,
+    MINIMUM_INTOXICATION_FRACTION = 0.25,
     QUALIFYING_PILLS = { ["Base.PillsBeta"] = true },
 }
 local Trait = HikiTraitsUnhinged.ICanQuit
@@ -27,6 +27,16 @@ function Trait.registerQualifyingPill(fullType)
     return true
 end
 
+local function isConsiderablyIntoxicated(character)
+    local intoxication = Library.Stats.getFraction(
+        character,
+        CharacterStat.INTOXICATION
+    )
+
+    return intoxication ~= nil
+        and intoxication >= Trait.MINIMUM_INTOXICATION_FRACTION
+end
+
 Library.ConsumptionManager.registerRule({
     id = Trait.TRAIT_ID,
     traitId = Trait.TRAIT_ID,
@@ -34,18 +44,21 @@ Library.ConsumptionManager.registerRule({
         local item = context.itemSnapshot or {}
 
         if context.kind == Library.ConsumptionManager.Kind.FLUID then
-            return context.liters >= Trait.MINIMUM_ALCOHOL_DRINK_LITERS
-                and Library.ConsumptionManager.isAlcoholic(
-                    context.fluidSnapshot
-                )
+            return Library.ConsumptionManager.isAlcoholic(
+                context.fluidSnapshot
+            ) and isConsiderablyIntoxicated(context.character)
         end
 
         if context.kind == Library.ConsumptionManager.Kind.PILL then
             return Trait.QUALIFYING_PILLS[item.fullType] == true
-                or item.smokable == true
         end
 
-        return item.smokable == true or item.alcoholic == true
+        if item.smokable == true then
+            return true
+        end
+
+        return item.alcoholic == true
+            and isConsiderablyIntoxicated(context.character)
     end,
     onConsume = function(context)
         Library.State.markWorldTime(
