@@ -11,6 +11,7 @@ local Trait = HikiTraits.ExhaustionAnxiety
 Library.Runtime.registerMinute({
     id = Trait.TRAIT_ID,
     traitId = Trait.TRAIT_ID,
+    scope = Library.Runtime.Scope.LOCAL,
     effects = function(context)
         local level = context.character:getMoodles():getMoodleLevel(MoodleType.ENDURANCE)
         return {

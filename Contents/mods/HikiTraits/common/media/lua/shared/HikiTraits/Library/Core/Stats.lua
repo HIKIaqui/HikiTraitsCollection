@@ -76,12 +76,16 @@ function Stats.sync(character, stat)
         return false
     end
 
-    if Util.isServerContext() and type(sendPlayerStat) == "function" then
-        sendPlayerStat(character, stat)
-        return true
+    if type(sendPlayerStat) ~= "function" then
+        return false
     end
 
-    return false
+    if not Util.isClientContext() and not Util.isServerContext() then
+        return false
+    end
+
+    local succeeded = pcall(sendPlayerStat, character, stat)
+    return succeeded
 end
 
 function Stats.syncDamage(character)

@@ -10,6 +10,7 @@ local Trait = HikiTraits.WeightAnxiety
 Library.NutritionManager.registerRule({
     id = Trait.TRAIT_ID,
     traitId = Trait.TRAIT_ID,
+    scope = Library.Runtime.Scope.LOCAL,
     weightTrouble = true,
     effects = {
         Library.Effects.addStat(CharacterStat.STRESS, Trait.STRESS_PER_MINUTE),
